@@ -1,0 +1,30 @@
+header img{
+    align-self: center;
+    width: 20%;
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: clamp(1em, 5vw, 3em);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--SecondaryColor);
+    margin: clamp(0.5rem, 2vw, 1rem) 0;
+    font-family: var(--Lora);
+    font-size: clamp(2.5rem, 12.5vw, 6rem);
+    line-height: 1.2;
+}
+:root{
+    --PrimaryColor: #1D3557;
+    --SecondaryColor: #FFB400;
+    --Lora: "Lora", serif;
+}
