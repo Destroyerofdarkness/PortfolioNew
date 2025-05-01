@@ -1,7 +1,28 @@
+html, body{
+    display: block;
+    background-color: var(--PrimaryColor);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
 header img{
     align-self: center;
     width: 20%;
     
+}
+.bildeOgTekst{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prosjekter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: clamp(1em, 5vw, 3em);
 }
 header{
     display: flex;
@@ -22,6 +43,37 @@ header h1{
     font-family: var(--Lora);
     font-size: clamp(2.5rem, 12.5vw, 6rem);
     line-height: 1.2;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 3em 1em;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+footer .footer-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--SecondaryColor);
+    color: var(--PrimaryColor);
+    border: none;
+    border-radius: 12px;
+    padding: 0.6em 1.5em;
+    font-size: clamp(2rem, 7.5vw, 3rem);
+    font-family: var(--Lora);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+    margin-bottom: 1em;
+    min-width: 90px;
+    text-align: center;
+}
+
+footer .footer-btn:hover {
+    background: white;
+    color: var(--PrimaryColor);
+    transform: translateY(-2px) scale(1.04);
 }
 :root{
     --PrimaryColor: #1D3557;
