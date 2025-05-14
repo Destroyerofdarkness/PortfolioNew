@@ -17,7 +17,6 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: clamp(1em, 5vw, 3em);
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -32,6 +31,7 @@ header h1{
     font-size: clamp(2.5rem, 12.5vw, 6rem);
     line-height: 1.2;
 }
+
 #information{
     display: flex;
     justify-content: center;
