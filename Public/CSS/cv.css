@@ -1,5 +1,6 @@
 html, body{
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: var(--PrimaryColor);
     justify-content: center;
     align-items: center;
@@ -10,7 +11,6 @@ html, body{
 header img{
     align-self: center;
     width: 20%;
-    
 }
 header{
     display: flex;
@@ -31,26 +31,29 @@ header h1{
     font-size: clamp(2.5rem, 12.5vw, 6rem);
     line-height: 1.2;
 }
-
-#information{
+#cvBox{
+    display: flex;
+    border: 0.4vw solid var(--SecondaryColor); /* tydelig gul kant */
+    border-radius: 1vw;
+    padding: 2vw;
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#cvBox img{
+    display: flex;
+    width: 25%;
+}
+h1{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 8em;
-}
-#information img{
-    display: flex;
-    width: 35%;
-}
-
-#information-text p{
-    font-size: clamp(1.2em, 1.6vw, 1.5rem);
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem); /* Gjør teksten mindre og mer responsiv */
+    margin: 1rem 0;
+    width: 80%;
     font-family: var(--Lora);
-    color: var(--SecondaryColor);
-}
-#information-text ul li{
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    font-family: var(--Lora);
+    padding: 0 1rem;
     color: var(--SecondaryColor);
 }
 footer{
@@ -83,44 +86,6 @@ footer .footer-btn:hover {
     background: white;
     color: var(--PrimaryColor);
     transform: translateY(-2px) scale(1.04);
-}
-
-@media (max-width: 1070px) {
-    html, body{
-        justify-content: center;
-        flex-direction: column;
-    }
-    #information p{
-        text-align: center;
-        font-size: clamp(1.6rem, 2vw, 1.8rem);
-    }
-    #information ul li{
-        text-align: center;
-        text-decoration: none;
-        list-style-type: none;
-        padding: 1vw;
-    }
-    #information{
-        flex-direction: column-reverse
-    }
-    #information img{
-        width: 50%;
-    }
-    footer {
-        gap: 1em;
-        padding: 2em 0.5em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    footer .footer-btn {
-        padding: 0.5em 1em;
-        font-size: 3rem;
-        min-width: 80px;
-    }
-    img{
-        width: 50%;
-    }
 }
 :root{
     --PrimaryColor: #1D3557;
