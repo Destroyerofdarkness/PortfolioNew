@@ -21,3 +21,17 @@ function visMer(){
     }
     
 }
+
+
+function addLogoClickListener() {
+    const logo = document.querySelector('header img');
+    if (logo) {
+        logo.style.cursor = "pointer";
+        logo.addEventListener('click', function() {
+            window.location.href = "index.html";
+        });
+    }
+}
+
+// Kjør funksjonen når siden er lastet
+window.addEventListener('DOMContentLoaded', addLogoClickListener);
