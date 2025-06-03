@@ -178,3 +178,17 @@ footer .footer-btn:hover {
     --SecondaryColor: #FFB400;
     --Lora: "Lora", serif;
 }
+@media (max-width: 780px){
+footer {
+        gap: 1em;
+        padding: 2em 0.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-btn {
+        padding: 0.5em 1em;
+        font-size: 1.5rem;
+        min-width: 80px;
+    }
+}

@@ -44,7 +44,12 @@ header h1{
 }
 
 #information-text p{
-    font-size: clamp(1.2em, 1.6vw, 1.5rem);
+    font-size: clamp(1.2em, 0.8vw, 0.75rem);
+    font-family: var(--Lora);
+    color: var(--SecondaryColor);
+}
+#information-text a{
+    font-size: clamp(1.2em, 0.8vw, 0.75rem);
     font-family: var(--Lora);
     color: var(--SecondaryColor);
 }
@@ -85,7 +90,7 @@ footer .footer-btn:hover {
     transform: translateY(-2px) scale(1.04);
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 780px) {
     html, body{
         justify-content: center;
         flex-direction: column;
@@ -94,14 +99,18 @@ footer .footer-btn:hover {
         text-align: center;
         font-size: clamp(1.6rem, 2vw, 1.8rem);
     }
+    #information ul{
+        display: block
+    }
     #information ul li{
-        text-align: center;
         text-decoration: none;
-        list-style-type: none;
         padding: 1vw;
     }
     #information{
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+    }
+    #information-text{
+        width: 70%;
     }
     #information img{
         width: 50%;
@@ -115,7 +124,7 @@ footer .footer-btn:hover {
     }
     footer .footer-btn {
         padding: 0.5em 1em;
-        font-size: 3rem;
+        font-size: 1.5rem;
         min-width: 80px;
     }
     img{

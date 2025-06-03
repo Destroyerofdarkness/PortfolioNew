@@ -1,3 +1,4 @@
 # Ignore video folder
 Public/Video/
 Public/Video/**
+.vercel
