@@ -36,7 +36,7 @@ header h1{
     border: 0.4vw solid var(--SecondaryColor); /* tydelig gul kant */
     border-radius: 1vw;
     padding: 2vw;
-    width: 80%;
+    width: 60%;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -55,7 +55,7 @@ h1{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: clamp(1rem, 2.5vw, 2rem); /* Gjør teksten mindre og mer responsiv */
+    font-size: clamp(0.5rem, 1.5vw, 2rem); /* Gjør teksten mindre og mer responsiv */
     margin: 1rem 0;
     width: 80%;
     font-family: var(--Lora);
@@ -67,7 +67,7 @@ h2{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: clamp(2rem, 7vw, 6rem);
+    font-size: clamp(2rem, 5vw, 6rem);
     margin: 1rem 0;
     font-family: var(--Lora);
     padding: 0 1rem;
@@ -78,7 +78,7 @@ h3{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: clamp(2rem, 6vw, 3rem);
+    font-size: clamp(1.5rem, 3vw, 3rem);
     margin: 1rem 0;
     font-family: var(--Lora);
     padding: 0 1rem;
@@ -89,7 +89,7 @@ h4{
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-size: clamp(1.25rem, 2vw, 1rem);
     margin: 1rem 0;
     font-family: var(--Lora);
     padding: 0 1rem;
@@ -124,7 +124,7 @@ ul{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 1.5vw, 1rem);
     margin: 1rem 0;
     font-family: var(--Lora);
     padding: 0 1rem;
@@ -190,5 +190,12 @@ footer {
         padding: 0.5em 1em;
         font-size: 1.5rem;
         min-width: 80px;
+    }
+    ul li{
+        text-align: center;
+        font-size: 3vw;
+    }
+    #cvBox{
+        width: 80%;
     }
 }

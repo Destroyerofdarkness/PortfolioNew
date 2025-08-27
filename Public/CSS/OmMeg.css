@@ -54,7 +54,7 @@ header h1{
     color: var(--SecondaryColor);
 }
 #information-text ul li{
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 1rem);
     font-family: var(--Lora);
     color: var(--SecondaryColor);
 }
